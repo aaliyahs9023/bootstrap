@@ -14,29 +14,30 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script>
-    $(function(){
-        ('h2').hide()
-        $('button').click(function(){
-            var input = $('#input').val();
-            ('h2').show()
+        $(function() {
+            $('h2').hide()
+            $('button').click(function() {
+                var input = $('#input').val();
+                $('h2') = "if you put bootstrap, you are correct!"
+                $('h2').show()
             })
-    });
+        });
     </script>
 </head>
 
 <body>
-    <div class="form-group">
-        <h1>What type of coding language are we using?</h1>
-        <label for="answr"></label>
-        <input type="text" class="form-control" id="answr">
-    </div>
-    <button type="button" class="btn btn-primary">submit</button>
-
-
-
     <div class="container">
+        <div class="jumbotron">
+            <div class="form-group">
+                <h1>What type of coding language are we using?</h1>
+                <label for="answr"></label>
+                <input type="text" class="form-control" id="answr">
+            </div>
+            <button type="button" class="btn btn-primary">submit</button>
+        </div>
     </div>
-<h2>If you put bootstrap you're correct!</h2>
+
+
 </body>
 
 </html>
